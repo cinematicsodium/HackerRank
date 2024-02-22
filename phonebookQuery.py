@@ -1,6 +1,6 @@
 phonebookDict: dict = {}
 
-numEntries: int = int(input())
+numEntries: int = int(input('Enter the number of pending phonebook entries: '))
 
 entryCount: int = 0
 
@@ -16,5 +16,5 @@ while True:
             print(f"{query}={phonebookDict[query]}")
         else:
             print("Not found")
-    except:
-        break  # Exit, Ctrl+D
+    except Exception:
+         break  # Exit, Ctrl+D
